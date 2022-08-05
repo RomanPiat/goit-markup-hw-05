@@ -83,6 +83,7 @@ li {
 }
 .header-nav {
   display: flex;
+  
 }
 .header-nav-link {
   color: var(--head-text-color);
@@ -90,13 +91,32 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  position: relative; 
 }
+
+/* Подчеркивание активной страницы */
+.current::after  {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: none;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  display: block;
+  bottom: -30px;
+}
+
 .header-nav-item {
   margin-right: 50px;
+  
 }
 .header-nav-list {
   display: flex;
   align-items: center;
+  
 }
 .header-contact {
   display: flex;
@@ -138,6 +158,12 @@ li {
     padding: 0;
         vertical-align: middle;
 }
+
+/* анимированные подчеркивания под ссылками на страницы */
+
+
+
+
 /* Раскраска секций (первая секция или единственная на листе - то белая) */
 .section-one {
   background-color: var(--primary-white-color);
