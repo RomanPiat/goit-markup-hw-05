@@ -92,6 +92,10 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative; 
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Подчеркивание активной страницы */
@@ -137,6 +141,10 @@ li {
   letter-spacing: 0.02em;
   align-items: center;
   fill: var(--primary-text-color);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover,
@@ -147,10 +155,6 @@ li {
 .header-contact-tel:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
-}
-
-.header-connect:hover {
-    color: var(--accent-color);
 }
 
 .icon-telmail {
@@ -284,6 +288,10 @@ justify-content: center;
   height: 60px;
   fill: var(--icon-color);
   border: 1px solid transparent;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon-list {
@@ -293,11 +301,15 @@ justify-content: center;
       height: 92%; 
       padding: 16px 32px;
       background-position: center;
-      background-color: var(--primary-white-color)
+      background-color: var(--primary-white-color);
       border-radius: 4px;
       align-items: center;
       fill: var(--icon-color);
       cursor: pointer;
+
+      transition-property: fill, color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-icon-list:hover .client-logo,
@@ -405,6 +417,10 @@ justify-content: center;
   height: 44px;
   padding: 12px;
   align-items: center;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-linc:hover,
@@ -464,14 +480,16 @@ cursor: pointer;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-item:hover,
-.address-list-mail:hover,
-.address-list-tel:hover,
+.address-list-telmail:hover,
 .address-list-item:focus,
-.address-list-mail:focus,
-.address-list-tel:focus {
+.address-list-telmail:focus {
   color: var(--accent-color);
 }
 
@@ -518,7 +536,12 @@ cursor: pointer;
   padding: 6px 22px;
   font-size: 16px;
   cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .radio:hover,
 .radio:focus {
   color: var(--primary-white-color);
@@ -561,6 +584,10 @@ cursor: pointer;
 
 .cards {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cards:hover {
@@ -587,6 +614,18 @@ cursor: pointer;
 }
 
 /* слайд на карточку */
+
+
+
+
+
+
+
+
+
+/* 
+
+
 
 .cards-photo {
   position: relative;
@@ -615,4 +654,4 @@ cursor: pointer;
 
 .cards:hover .overlay {
 transform: translate(0);
-}
+} */
