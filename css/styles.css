@@ -335,6 +335,33 @@ li {
   gap: 30px;
   justify-content: center;
 }
+.activity-item {
+  display: flex;
+}
+.activity-list .activity-item {
+  position: relative;
+}
+.activity-item img {
+  display: block;
+}
+
+.activity-text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+}
 
 /*-- Team -- */
 
@@ -364,6 +391,7 @@ li {
   letter-spacing: 0.03em;
   text-align: center;
 }
+
 .team-item-header {
   color: var(--head-text-color);
   font-weight: 500;
@@ -374,6 +402,7 @@ li {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .team-item-text {
   color: var(--portfolio-text-color);
   font-size: 16px;
@@ -382,6 +411,7 @@ li {
   text-align: center;
   padding-bottom: 16px;
 }
+
 .team-item-figure {
   margin: 0;
 }
@@ -472,7 +502,6 @@ cursor: pointer;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -548,7 +577,6 @@ line-height: 100%;
   justify-content: center;
   fill: var(--logo-black-color);
   background-color: var(--primary-white-color);
-
 }
 
 .backdrop {
@@ -558,10 +586,9 @@ line-height: 100%;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-
-      transition-property: opacity;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -584,7 +611,6 @@ line-height: 100%;
   padding: 6px 22px;
   font-size: 16px;
   cursor: pointer;
-
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
